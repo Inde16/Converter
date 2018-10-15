@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bg"
+    tools:context="converter.myandroid.com.converter.MainActivity">
+
+
+    <TextView
+        android:id="@+id/title_id"
+        android:text="Converter"
+        android:textStyle="bold"
+        android:textColor="#f5121211"
+        android:textSize="30sp"
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_conv_cel_to_far_id"
+        android:layout_below="@+id/title_id"
+        android:text="Cel/Far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="USD/EUR"
+        android:id="@+id/btn_conv_eur_to_usd"
+        android:layout_toRightOf="@+id/btn_conv_cel_to_far_id"
+        android:layout_below="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_lbs_to_kilos"
+        android:text="Lbs/Kg"
+        android:layout_toRightOf="@+id/btn_conv_eur_to_usd"
+        android:layout_below="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_metre_ti_feet"
+        android:text="M/Ft"
+        android:layout_below="@+id/title_id"
+        android:layout_toRightOf="@id/btn_lbs_to_kilos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
